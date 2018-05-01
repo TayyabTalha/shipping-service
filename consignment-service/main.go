@@ -9,9 +9,9 @@ import (
 	"golang.org/x/net/context"
 	//"google.golang.org/grpc"
 	//"google.golang.org/grpc/reflection"
+	pb "github.com/TayyabTalha/shipping-service/consignment-service/proto/consignment"
+	vesselProto "github.com/TayyabTalha/shipping-service/vessel-service/proto/vessel"
 	micro "github.com/micro/go-micro"
-	pb "shipping-service/consignment-service/proto/consignment"
-	vesselProto "shipping-service/vessel-service/proto/vessel"
 )
 
 type Repository interface {
