@@ -66,7 +66,7 @@ func createDummyData(repo Repository) {
 
 func main() {
 
-	host := os.Getenv("host")
+	host := os.Getenv("DB_HOST")
 
 	if host == "" {
 		host = defaultHost

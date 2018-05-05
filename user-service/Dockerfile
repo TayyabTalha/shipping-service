@@ -15,4 +15,4 @@ RUN mkdir /app
 WORKDIR /app
 COPY --from=builder /go/src/github.com/TayyabTalha/shipping-service/user-service/user-service .
 
-CMD ["./vessel-service"]
+CMD ["./user-service"]
