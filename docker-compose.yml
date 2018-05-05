@@ -23,3 +23,18 @@ services:
                 environment:
                         MICRO_ADDRESS: ":5052"
                         MICRO_REGISTRY: "mdns"
+        user-service:
+                build: ./user-service
+                ports:
+                        - 50053:50051
+                environment:
+                        MICRO_ADDRESS: ":5053"
+                        MICRO_REGISTRY: "mdns"
+        datastore:
+                image: mongo
+                ports:
+                        - 27017:27017
+        database:
+                image: postgres
+                ports:
+                        - 5432:5432
